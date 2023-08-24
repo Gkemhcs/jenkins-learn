@@ -18,6 +18,8 @@ pipeline{
                 sh """
             echo "starting"
             echo "testing" 
+            echo "${env.BUILD_ID}"
+            
             echo "finished"
             """
             }
