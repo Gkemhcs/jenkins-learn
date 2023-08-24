@@ -6,7 +6,7 @@ pipeline{
           sh """
             echo "starting"
             mkdir workspace 
-            echo "i am here at $(time)" > workspace/hello.txt
+            echo "i am here at " > workspace/hello.txt
             echo "building" 
             echo "finished"
             """
