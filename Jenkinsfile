@@ -5,8 +5,8 @@ pipeline{
             steps{
           sh """
             echo "starting"
-            mkdir workspace 
-            echo "i am here at " > workspace/hello.txt
+  
+            echo "i am here at " >> workspace/hello.txt
             echo "building" 
             echo "finished"
             """
@@ -18,6 +18,7 @@ pipeline{
                 sh """
             echo "starting"
             echo "testing" 
+            echo "${currentBuild.currentResult}"
             echo "${env.BUILD_ID}"
             
             echo "finished"
