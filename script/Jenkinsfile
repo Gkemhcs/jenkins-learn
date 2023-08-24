@@ -1,9 +1,7 @@
 node{
   checkout scm
 stage("check"){
-echo "starting"
-ls
-  
+sh "ls"
 }
 
 
