@@ -1,0 +1,9 @@
+node{
+stage("check"){
+echo "starting"
+ls
+  
+}
+
+
+}
