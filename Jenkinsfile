@@ -1,5 +1,10 @@
 pipeline{
     agent any 
+
+    params{
+    string(name:"NAME",defaultValue: "GKEMHCS",description:"hello")
+        
+    }
     stages{
         stage('Build'){
             steps{
@@ -14,6 +19,7 @@ pipeline{
             ls /tmp
             echo "building" 
             echo "finished"
+            echo "name is ${NAME}"
             """
             }
          
